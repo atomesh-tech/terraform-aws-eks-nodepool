@@ -46,7 +46,7 @@ resource "kubernetes_manifest" "this" {
       disruption = {
         budgets           = var.disruption_budgets
         consolidateAfter  = var.disruption_consolidate_after
-        consolidatePolicy = var.disruption_consolidate_policy
+        consolidationPolicy = var.disruption_consolidate_policy
       }
 
       template = {
